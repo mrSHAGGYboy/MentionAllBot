@@ -17,20 +17,20 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**Im MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more infomation__\n\n Follow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github",
+  await event.reply("__**Im Smt MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more infomation__\n\n Join [@SL_MEDIA_TECH_GRUOP](https://t.me/SL_MEDIA_TECH_GRUOP) on Telegram",
                     buttons=(
-                      [Button.url('📣 Channel', 'https://t.me/harp_tech'),
-                      Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')]
+                      [Button.url('📣 Channel', 'https://t.me/sl_media_tech'),
+                      Button.url('📦 Group', 'https://t.me/SL_MEDIA_TECH_GRUOP')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@AnjanaMadu](https://github.com/AnjanaMadu) on Github"
+  helptext = "**Help Menu of Smt MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\n Join [@SL_MEDIA_TECH_GRUOP](https://t.me/SL_MEDIA_TECH_GRUOP) on Telegram"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('📣 Channel', 'https://t.me/harp_tech'),
-                      Button.url('📦 Source', 'https://github.com/AnjanaMadu/MentionAllBot')]
+                      [Button.url('📣 Channel', 'https://t.me/sl_media_tech'),
+                      Button.url('📦 Group', 'https://t.me/SL_MEDIA_TECH_GRUOP')]
                     ),
                     link_preview=False
                    )
